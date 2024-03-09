@@ -1,0 +1,60 @@
+{% load static %}
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Weather Forecast</title>
+    <link rel="icon" href="/static/images/Dream_TradingCard%20(3)-modified.png" type="image/x-icon">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+
+<!-- Header Section -->
+<header class="header">
+    <div class="logo">
+        <img src="{% static 'images/Dream_TradingCard (3)-modified.png' %}" alt="website Logo">
+        <h4> weather forecast</h4>
+    </div>
+</header>
+
+<!-- Main Content Section -->
+<main class="main-content">
+    <div class="hero-section">
+        <div class="image-container">
+            <img src="{% static 'images/538804b9-3472-4d48-8d55-1e5e282d56c8.jpg' %}" alt="Hero Image">
+            <div class="overlay-text">
+                <h2>Welcome to Your Weather Portal</h2>
+                <p>Explore weather information for any city.</p>
+            </div>
+            <div class="search-bar">
+                <input type="text" id="locationInput" placeholder="Enter location (city, country)">
+                <br>
+                <button onclick="getWeather()">Get Weather</button>
+            </div>
+            <div id="weather-info">
+
+            </div>
+        </div>
+    </div>
+</main>
+
+<!-- Footer Section -->
+<footer class="footer">
+    <div class="about-section">
+        <h3>Your daily weather guide, making every day brighter</h3>
+        <div class="social-links">
+            <p>Visit my
+                <a href="https://github.com/ParsaKhmd" target="_blank" rel="noopener noreferrer">GitHub</a>
+                and
+                <a href="https://www.linkedin.com/in/parsa-khanmohamadi-40409529a/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            </p>
+        </div>
+    </div>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+<script src="{% static 'js/script.js' %}"></script>
+</body>
+</html>
+
